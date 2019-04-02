@@ -1,0 +1,43 @@
+
+body  {
+  background-image: url("../images/background.png");
+  color: #eee;
+  font-size: 20px;
+} 
+
+h1 {
+  font-size: 40px;
+  padding: 15px;
+  color: #eee;
+}
+
+main {
+  background-color: #225378;
+  color: #52ADB9;
+}
+
+img {
+  height: 150px;  
+  width: 150px;
+}
+
+p {
+  padding: 4px 15px;
+  color: white;
+}
+
+#target-score {
+  background: gray;
+  color: white;
+  height: 200px;
+  width: 200px;
+  font-size: 40px;
+}
+
+#user-score {
+  background: lightcoral;
+  color: black;
+  height: 200px;
+  width: 200px;
+  font-size: 40px;
+}
