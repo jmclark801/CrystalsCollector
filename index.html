@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Crystal Matching Game</title>
-  <link rel="stylesheet" type="text/css"  href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css"  href="assets/css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body>
   <div class="container">
     <header class="row justify-content-center">
@@ -23,11 +26,13 @@
     <div class="row">
       <aside class="col-5">
         <p>You will be given a random number at the start of the game.</p>
-        <p>There are four crystals below. By clicking on a crystal below, you will add a specific amount of points to your total score.</p>
-        <p>You win the game by matching your total score to a random number. You lose the game if your total score goes above the random number</p>
+        <p>There are four crystals below. By clicking on a crystal below, you will add a specific amount of points to
+          your total score.</p>
+        <p>You win the game by matching your total score to a random number. You lose the game if your total score goes
+          above the random number</p>
         <p>The value of each crystal is hidden from you until you click on it.</p>
         <p>Each time when the game starts, the game will change the value of each crystal.</p>
-        <button id="start-button" class="btn-info">Start</button> 
+        <button id="start-button" class="btn-info">Start</button>
       </aside>
       <main class="col-7">
         <div class="row">
@@ -37,23 +42,26 @@
               <div id="target-score"></div>
             </div>
           </div>
-            <div id="user-score-container" class="col-6">
+          <div id="user-score-container" class="col-6">
+            <div class="center-wrapper">
               <h2>Your Score:</h2>
-                <div id="user-score"></div>
+              <div id="user-score"></div>
             </div>
-        </div>  
+          </div>
+        </div>
         <div id="win-loss"></div>
         <div id="gems">
-          <img id="gem-1" value="1" src="assets/images/aquaMarine.png" >
+          <img id="gem-1" value="1" src="assets/images/aquaMarine.png">
           <img id="gem-2" value="2" src="assets/images/green.png">
           <img id="gem-3" value="3" src="assets/images/blueGem.png">
           <img id="gem-4" value="4" src="assets/images/red.png">
         </div>
       </main>
     </div>
-  </div> 
+  </div>
   <footer></footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
