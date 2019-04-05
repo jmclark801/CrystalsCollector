@@ -1,3 +1,17 @@
+@keyframes rotate-in-center {
+  0% {
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+aside {
+  padding-left: 15px;
+}
 
 body  {
   background-image: url("../images/background.png");
@@ -5,15 +19,27 @@ body  {
   font-size: 20px;
 } 
 
+.center-wrapper {
+  text-align: center;
+}
+
+#losses{
+  color: #cd5554;
+  font-size: 20px;
+}
+
+#gems {
+  padding-top: 50px;
+} 
+
+header {
+  margin-bottom: 30px;
+}
+
 h1 {
   font-size: 40px;
   padding: 15px;
   color: #eee;
-}
-
-main {
-  background-color: #225378;
-  color: #52ADB9;
 }
 
 img {
@@ -21,23 +47,50 @@ img {
   width: 150px;
 }
 
+main {
+  background-color: #225378;
+  color: #52ADB9;
+}
+
 p {
-  padding: 4px 15px;
-  color: white;
+  padding: 0 15px 5px 0;
+  color: #eee;
+}
+
+#status-lose {
+  animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;  
+  color: #cd5554;
+  font-size: 20px;
+}
+
+#status-win  {
+  animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;  
+  color: #6ed3cf;
+  font-size: 20px;
 }
 
 #target-score {
-  background: gray;
-  color: white;
-  height: 200px;
-  width: 200px;
+  background: #777;
+  color: #eee;
+  display: inline-block;
   font-size: 40px;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 100px;
 }
 
 #user-score {
   background: lightcoral;
   color: black;
-  height: 200px;
-  width: 200px;
   font-size: 40px;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 100px;  
+}
+
+#wins {
+  color: #6ed3cf;
+  font-size: 20px;
 }

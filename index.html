@@ -10,24 +10,16 @@
 </head>
 <body>
   <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          One of three columns
-        </div>
-        <div class="col-sm">
-          One of three columns
-        </div>
-        <div class="col-sm">
-          One of three columns
-        </div>
-      </div>
-    </div>
-  <div class="container">
-    <header class="row align-items-center">
-      <h1 class="col-1 align-items-center">Crystals Collector</h1>
+    <header class="row justify-content-center">
+      <h1 class="col-4">Crystals Collector</h1>
     </header>
   </div>
   <div class="container">
+    <div class="row justify-content-between">
+      <p class="col-3" id="wins">Wins: 0</p>
+      <p class="col-4" id="status"></p>
+      <p class="col-3" id="losses">Losses: 0</p>
+    </div>
     <div class="row">
       <aside class="col-5">
         <p>You will be given a random number at the start of the game.</p>
@@ -35,21 +27,29 @@
         <p>You win the game by matching your total score to a random number. You lose the game if your total score goes above the random number</p>
         <p>The value of each crystal is hidden from you until you click on it.</p>
         <p>Each time when the game starts, the game will change the value of each crystal.</p>
+        <button id="start-button" class="btn-info">Start</button> 
       </aside>
       <main class="col-7">
         <div class="row">
-          <div id="target-score" class="col"></div>
-          <div id="user-score" class="col"></div>
+          <div id="target-score-container" class="col-6">
+            <div class="center-wrapper">
+              <h2>Target Score:</h2>
+              <div id="target-score"></div>
+            </div>
+          </div>
+            <div id="user-score-container" class="col-6">
+              <h2>Your Score:</h2>
+                <div id="user-score"></div>
+            </div>
         </div>  
         <div id="win-loss"></div>
         <div id="gems">
-          <img id="gem-1" value="1" src="assets/images/aquaMarine.png" ></div>
-          <img id="gem-2" value="2" src="assets/images/green.png"></div>
-          <img id="gem-3" value="3" src="assets/images/blueGem.png"></div>
-          <img id="gem-4" value="4" src="assets/images/red.png"></div>
+          <img id="gem-1" value="1" src="assets/images/aquaMarine.png" >
+          <img id="gem-2" value="2" src="assets/images/green.png">
+          <img id="gem-3" value="3" src="assets/images/blueGem.png">
+          <img id="gem-4" value="4" src="assets/images/red.png">
         </div>
       </main>
-      <button id="start-button" class="btn">Start</button>
     </div>
   </div> 
   <footer></footer>
