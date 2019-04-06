@@ -86,7 +86,7 @@ p {
 }
 
 #target-score {
-  background: #777;
+  background: #225378;
   color: #eee;
   display: inline-block;
   font-size: 40px;
@@ -97,7 +97,7 @@ p {
 }
 
 #user-score {
-  background: #777;
+  background: #225378;
   color: #eee;
   font-size: 40px;
   height: 100px;
